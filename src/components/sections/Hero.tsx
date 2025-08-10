@@ -68,7 +68,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="space-y-6"
           >
-            <p className="text-xl md:text-2xl max-w-4xl mx-auto text-muted-foreground">
+            <p className="text-base md:text-lg max-w-4xl mx-auto text-muted-foreground">
               Våre ergonomiske kluter er utviklet for å gjøre daglige oppgaver enklere. 
               Gjennom innovativ utforming skaper vi en enklere, mer effektiv hverdag.
             </p>

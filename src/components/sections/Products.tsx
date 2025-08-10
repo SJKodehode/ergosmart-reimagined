@@ -14,7 +14,7 @@ export function Products() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Våre produkter</h2>
-          <p className="text-xl max-w-3xl mx-auto text-muted-foreground">
+          <p className="text-base md:text-lg max-w-3xl mx-auto text-muted-foreground">
             Spesialdesignede ergonomiske håndklær utviklet for helsesektoren med strategisk 
             plasserte gripehåndtak og forsterkede sømmer.
           </p>

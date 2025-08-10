@@ -62,7 +62,7 @@ export function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Kontakt oss i dag</h2>
-          <p className="text-xl max-w-3xl mx-auto text-muted-foreground">
+          <p className="text-base md:text-lg max-w-3xl mx-auto text-muted-foreground">
             Vi setter stor pris på dialog med både eksisterende og potensielle kunder. 
             Ta kontakt for en uforpliktende samtale om dine behov.
           </p>
@@ -75,7 +75,7 @@ export function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <Card className="shadow-lg">
+            <Card className="rounded-2xl shadow-lg">
               <CardBody className="p-8">
                 <h3 className="text-2xl font-bold mb-6">Send oss en melding</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -140,7 +140,7 @@ export function Contact() {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <Card className="shadow-lg">
+            <Card className="rounded-2xl shadow-lg">
               <CardBody className="p-8">
                 <h3 className="text-2xl font-bold mb-6">Kontaktinformasjon</h3>
                 <div className="space-y-6">
@@ -184,7 +184,7 @@ export function Contact() {
               </CardBody>
             </Card>
 
-            <Card className="shadow-lg">
+            <Card className="rounded-2xl shadow-lg">
               <CardBody className="p-8">
                 <h3 className="text-xl font-bold mb-4">Våre tjenester</h3>
                 <ul className="space-y-3 text-muted-foreground">

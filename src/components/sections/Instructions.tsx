@@ -76,7 +76,7 @@ export function Instructions() {
                 <div className="flex-shrink-0 w-12 h-12 bg-green-accent text-white rounded-full flex items-center justify-center font-bold text-xl">
                   {step.number}
                 </div>
-                <p className="text-lg leading-relaxed pt-2">
+                <p className="text-base md:text-lg leading-relaxed pt-2">
                   {step.title}
                 </p>
               </motion.div>
@@ -103,7 +103,7 @@ export function Instructions() {
                 className="flex items-center gap-4"
               >
                 <Check className="w-6 h-6 text-green-accent flex-shrink-0" />
-                <p className="text-lg">{benefit}</p>
+                <p className="text-base md:text-lg">{benefit}</p>
               </motion.div>
             ))}
           </div>

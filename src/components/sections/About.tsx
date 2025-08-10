@@ -37,7 +37,7 @@ export function About() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Om oss</h2>
-          <p className="text-xl max-w-4xl mx-auto text-muted-foreground leading-relaxed">
+          <p className="text-base md:text-lg max-w-4xl mx-auto text-muted-foreground leading-relaxed">
             ErgoSmart AS er et norsk selskap etablert av yrkesaktive personer med solid helsefaglig bakgrunn. 
             Vi utvikler og produserer ergonomiske, hygieniske vaskekluter spesielt designet for personlig hygiene. 
             Vår ambisjon er å skape produkter som forbedrer hverdagen for mennesker med ulike behov og bidrar til 
@@ -54,7 +54,7 @@ export function About() {
           className="mb-16"
         >
           <h3 className="text-3xl font-bold text-center mb-12">Hvorfor velge oss?</h3>
-          <p className="text-lg text-center max-w-4xl mx-auto mb-12 text-muted-foreground">
+          <p className="text-base md:text-lg text-center max-w-4xl mx-auto mb-12 text-muted-foreground">
             Ergo Smart AS skiller seg ut i markedet gjennom vår dype forståelse for helsesektorens unike utfordringer. 
             Vår grunnlegger har over 15 års erfaring som sykepleier og helsefagarbeider i eldreomsorgen, og har personlig 
             opplevd behovet for bedre ergonomiske løsninger i hverdagen.
@@ -70,11 +70,11 @@ export function About() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <Card className="h-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <Card className="h-full rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardBody className="p-6 text-center">
                   <feature.icon className="w-12 h-12 mx-auto mb-4 text-green-accent" />
                   <h4 className="text-xl font-bold mb-3">{feature.title}</h4>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </CardBody>

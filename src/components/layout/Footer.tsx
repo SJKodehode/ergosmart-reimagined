@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function Footer() {
   return (
-    <footer className="bg-card border-t">
+    <footer className="bg-card border-t rounded-t-2xl">
       <div className="container mx-auto px-4 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

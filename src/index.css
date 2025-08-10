@@ -41,7 +41,7 @@ All colors MUST be HSL.
     --green-accent: 95 55% 45%;
     --green-light: 95 40% 85%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -110,6 +110,10 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  p {
+    @apply text-base md:text-lg leading-relaxed text-foreground;
   }
 }

@@ -15,7 +15,7 @@ export function HealthcareSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Enklere pleie og stell for helsepersonell
           </h2>
-          <p className="text-xl max-w-4xl mx-auto text-muted-foreground leading-relaxed">
+          <p className="text-base md:text-lg max-w-4xl mx-auto text-muted-foreground leading-relaxed">
             Flere av våre ergonomiske, hygieniske kluter er utstyrt med lange håndtak (35 cm på hver side), 
             spesielt utviklet for assistert pleie. Den innovative designløsningen gjør det mulig for 
             helsepersonell å utføre kroppsvask uten å måtte benytte ensidige og gjentagende bevegelser av hånd, 
@@ -32,7 +32,7 @@ export function HealthcareSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <Card className="shadow-lg">
+              <Card className="rounded-2xl shadow-lg overflow-hidden">
                 <CardBody className="p-0">
                   <Image
                     src={`https://images.unsplash.com/photo-${1559757148 + index}000000-healthcare-professional-assisting-patient?w=400&h=300&fit=crop`}

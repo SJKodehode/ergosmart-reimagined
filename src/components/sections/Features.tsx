@@ -36,11 +36,11 @@ export function Features() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
-              <Card className="h-full shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card className="h-full rounded-2xl border border-border bg-card shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <CardBody className="p-8 text-center">
                   <feature.icon className={`w-16 h-16 mx-auto mb-6 ${feature.color}`} />
                   <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     {feature.description}
                   </p>
                 </CardBody>
