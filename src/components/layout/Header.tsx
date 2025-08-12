@@ -11,15 +11,18 @@ export function Header() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
+      className=""
     >
       <Navbar 
         isBlurred={false}
-        className="bg-hero-bg/80 backdrop-blur-sm"
+        className="bg-hero-bg backdrop-blur-sm py-10"
         maxWidth="xl"
         height="80px"
       >
+        <div className="flex w-full justify-between mx-4 sm:mx-8 lg:mx-20">
+
         <NavbarBrand>
-          <h1 className="text-2xl font-bold text-foreground">
+          <h1 className="text-2xl sm:text-4xl font-bold text-foreground">
             Ergo Smart
           </h1>
         </NavbarBrand>
@@ -28,13 +31,14 @@ export function Header() {
           <NavbarItem>
             <Button
               variant="ghost"
-              className="text-foreground hover:text-green-accent"
+              className="text-foreground bg-white border border-border shadow-lg rounded-md"
               onClick={scrollToContact}
-            >
+              >
               Kontakt oss
             </Button>
           </NavbarItem>
         </NavbarContent>
+              </div>
       </Navbar>
     </motion.div>
   );

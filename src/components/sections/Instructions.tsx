@@ -1,6 +1,11 @@
 import { Card, CardBody, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import instruction1 from '@/assets/instructions-1.jpg'
+import instruction2 from '@/assets/instructions-2.jpg'
+import instruction3 from '@/assets/instructions-3.jpg'
+import instruction4 from '@/assets/instructions-4.jpg'
+
 
 const steps = [
   {
@@ -29,8 +34,9 @@ const benefits = [
 ];
 
 export function Instructions() {
+  const imgs = [instruction1, instruction2, instruction3, instruction4]
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 lg:py-40 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,8 +50,8 @@ export function Instructions() {
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="grid grid-cols-2 gap-4">
+        <div className="grid xl:grid-cols-2 max-w-sm sm:max-w-xl md:max-w-3xl mx-auto xl:max-w-full gap-16 items-center xl:-ml-60">
+          <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-rows-2 gap-4">
             {[1, 2, 3, 4].map((item, index) => (
               <motion.div
                 key={index}
@@ -55,12 +61,13 @@ export function Instructions() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
               >
                 <Image
-                  src={`https://images.unsplash.com/photo-${1580000000 + index}000000-person-using-towel?w=300&h=300&fit=crop`}
+                  src={`${imgs[0 + index]}`}
                   alt={`Bruksanvisning steg ${item}`}
-                  className="rounded-xl shadow-lg"
+                  className="rounded-xl shadow-lg opacity-100"
                 />
               </motion.div>
             ))}
+            <div className="hidden xl:grid col-span-2 col-start-1 row-start-1 row-span-2"></div>
           </div>
 
           <div className="space-y-8">

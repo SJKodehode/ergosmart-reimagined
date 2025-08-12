@@ -1,8 +1,8 @@
 import { Button, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import heroImage1 from "@/assets/hero-image-1.jpg";
+import heroImage1 from "@/assets/hero-img-1.jpg";
 import heroImage2 from "@/assets/hero-image-2.jpg";
-import heroImage3 from "@/assets/hero-image-3.jpg";
+import heroImage3 from "@/assets/product-collection.jpg";
 
 export function Hero() {
   const scrollToContact = () => {
@@ -10,8 +10,8 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-hero-bg overflow-hidden">
-      <div className="container mx-auto px-4 py-20">
+    <section className="relative min-h-screen bg-hero-bg overflow-hidden md:max-w-full max-w-lg mx-auto">
+      <div className="container mx-auto px-4 pb-20 pt-6">
         <div className="text-center mb-16">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
@@ -26,40 +26,45 @@ export function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2 }}
-            className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-6xl mx-auto mb-16"
+            className="grid grid-cols-1 xl:grid-cols-6 md:gap-4 gap-2 md:gap-y-3 max-w-2xl xl:max-w-7xl mx-4 sm:mx-auto mb-16"
           >
-            <div className="md:col-span-1">
+            <div className="md:col-span-1 md:row-span-2 xl:grid hidden xl:col-start-2">
               <Image
                 src={heroImage1}
                 alt="Ergonomisk klut i bruk"
-                className="rounded-3xl shadow-lg"
+                className="rounded-3xl shadow-lg opacity-100 hidden md:grid"
                 classNames={{
                   wrapper: "w-full h-full"
                 }}
               />
             </div>
             
-            <div className="md:col-span-3">
+            <div className="xl:col-span-3 xl:row-span-3 mt-10 xl:mt-0">
               <Image
                 src={heroImage2}
                 alt="Person bruker ergonomisk håndkle"
-                className="rounded-3xl shadow-lg"
+                className="rounded-3xl shadow-lg opacity-100 xl:h-[449px]"
+                
+                classNames={{
+                  wrapper: " w-full h-full"
+                  
+                  
+                }}
+              />
+            </div>
+            <div className="md:col-span-1 md:row-span-1 xl:grid hidden xl:col-start-2">
+              <Image
+                src={heroImage3}
+                alt="Ergonomisk klut i bruk"
+                className="rounded-3xl shadow-lg opacity-100 hidden md:grid"
+                height={134.88}
                 classNames={{
                   wrapper: "w-full h-full"
                 }}
               />
             </div>
             
-            <div className="md:col-span-1">
-              <Image
-                src={heroImage3}
-                alt="Assistert pleie"
-                className="rounded-3xl shadow-lg"
-                classNames={{
-                  wrapper: "w-full h-full"
-                }}
-              />
-            </div>
+            
           </motion.div>
 
           <motion.div
@@ -75,7 +80,7 @@ export function Hero() {
             
             <Button
               size="lg"
-              className="bg-hero-accent text-white font-semibold px-8 py-6 text-lg"
+              className="bg-hero-accent text-white font-semibold px-8 py-6 text-lg rounded-md"
               onClick={scrollToContact}
             >
               Kontakt oss

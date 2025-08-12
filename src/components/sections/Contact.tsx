@@ -81,14 +81,14 @@ export function Contact() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <Input
-                      label="Navn"
+                      placeholder="Navn"
                       value={formData.name}
                       onChange={(e) => handleChange("name", e.target.value)}
                       required
                       variant="bordered"
                     />
                     <Input
-                      label="E-post"
+                      placeholder="E-post"
                       type="email"
                       value={formData.email}
                       onChange={(e) => handleChange("email", e.target.value)}
@@ -98,14 +98,14 @@ export function Contact() {
                   </div>
                   <div className="grid md:grid-cols-2 gap-4">
                     <Input
-                      label="Telefon"
+                      placeholder="Telefon"
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => handleChange("phone", e.target.value)}
                       variant="bordered"
                     />
                     <Input
-                      label="Bedrift/Institusjon"
+                      placeholder="Bedrift/Institusjon"
                       value={formData.company}
                       onChange={(e) => handleChange("company", e.target.value)}
                       variant="bordered"
@@ -123,7 +123,7 @@ export function Contact() {
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-green-accent text-white font-semibold"
+                    className="w-full bg-green-accent text-white font-semibold rounded-md"
                     isLoading={isSubmitting}
                   >
                     {isSubmitting ? "Sender..." : "Send melding"}
