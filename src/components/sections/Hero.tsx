@@ -23,12 +23,14 @@ export function Hero() {
           </motion.h1>
           
           <motion.div 
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
+
             className="grid grid-cols-1 xl:grid-cols-6 md:gap-4 gap-2 md:gap-y-3 max-w-2xl xl:max-w-7xl mx-4 sm:mx-auto mb-16"
           >
-            <div className="md:col-span-1 md:row-span-2 xl:grid hidden xl:col-start-2">
+            <motion.div 
+            initial={{ opacity: 0, scale: 0.8}}
+            animate={{ opacity: 1, scale: 1}}
+            transition={{duration: 0.6, delay: 0}}
+            className="md:col-span-1 md:row-span-2 xl:grid hidden xl:col-start-2">
               <Image
                 src={heroImage1}
                 alt="Ergonomisk klut i bruk"
@@ -38,9 +40,13 @@ export function Hero() {
                   wrapper: "w-full h-full"
                 }}
               />
-            </div>
+            </motion.div>
             
-            <div className="xl:col-span-3 xl:row-span-3 mt-10 xl:mt-0">
+            <motion.div 
+            initial={{ opacity: 0, scale: 0.9}}
+            animate={{ opacity: 1, scale: 1}}
+            transition={{duration: 0.6, delay: 0.3}}
+            className="xl:col-span-3 xl:row-span-3 mt-10 xl:mt-0">
               <Image
                 src={heroImage2}
                 alt="Person bruker ergonomisk håndkle"
@@ -52,8 +58,12 @@ export function Hero() {
                   
                 }}
               />
-            </div>
-            <div className="md:col-span-1 md:row-span-1 xl:grid hidden xl:col-start-2">
+            </motion.div>
+            <motion.div 
+            initial={{ opacity: 0, scale: 0.8}}
+            animate={{ opacity: 1, scale: 1}}
+            transition={{duration: 0.6, delay: 0.6}}
+            className="md:col-span-1 md:row-span-1 xl:grid hidden xl:col-start-2">
               <Image
                 src={heroImage3}
                 alt="Ergonomisk klut i bruk"
@@ -63,7 +73,7 @@ export function Hero() {
                   wrapper: "w-full h-full"
                 }}
               />
-            </div>
+            </motion.div>
             
             
           </motion.div>
