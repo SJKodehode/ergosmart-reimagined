@@ -29,7 +29,7 @@ const steps = [
 const benefits = [
   "Ergonomisk design som gjør det enkelt å nå hele overkroppen",
   "Mykt, absorberende materiale som er skånsomt mot huden", 
-  "Perfekt for personer med redusert bevegelighet",
+  "Perfekt for personer med redusert bevegelighets",
   "Slitesterkt materiale som tåler hyppig bruk og vask",
   "Tåler vask fra 60 °C til 90 °C, som sikrer en høy hygienestandard",
   "Inneholder ikke mikroplast, som er skadelig for miljøet"
@@ -76,8 +76,8 @@ export function Instructions() {
             {steps.map((step, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="flex gap-4"
