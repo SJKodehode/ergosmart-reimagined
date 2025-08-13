@@ -1,6 +1,6 @@
 import { Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import productCollection from '@/assets/product-collection.jpg'
+import productCollection from '@/assets/resized/product-collection.jpg'
 import washcloth1 from "@/assets/resized/washcloth-1.jpg";
 import washcloth2 from "@/assets/resized/washcloth-2.jpg";
 import washcloth3 from "@/assets/resized/washcloth-3.jpg";
