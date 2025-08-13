@@ -30,7 +30,9 @@ const benefits = [
   "Ergonomisk design som gjør det enkelt å nå hele overkroppen",
   "Mykt, absorberende materiale som er skånsomt mot huden", 
   "Perfekt for personer med redusert bevegelighet",
-  "Slitesterkt materiale som tåler hyppig bruk og vask"
+  "Slitesterkt materiale som tåler hyppig bruk og vask",
+  "Tåler vask fra 60 °C til 90 °C, som sikrer en høy hygienestandard",
+  "Inneholder ikke mikroplast, som er skadelig for miljøet"
 ];
 
 export function Instructions() {
