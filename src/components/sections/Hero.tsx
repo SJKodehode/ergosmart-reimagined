@@ -35,7 +35,7 @@ export function Hero() {
                 src={heroImage1}
                 alt="Ergonomisk klut i bruk"
                 className="rounded-3xl shadow-lg opacity-100 hidden md:grid"
-                
+                fetchPriority="high"
                 classNames={{
                   wrapper: "w-full h-full"
                 }}
@@ -51,7 +51,7 @@ export function Hero() {
                 src={heroImage2}
                 alt="Person bruker ergonomisk håndkle"
                 className="rounded-3xl shadow-lg opacity-100 xl:h-[449px]"
-                
+                fetchPriority="high"
                 classNames={{
                   wrapper: " w-full h-full"
                   
@@ -68,6 +68,7 @@ export function Hero() {
                 src={heroImage3}
                 alt="Ergonomisk klut i bruk"
                 className="rounded-3xl shadow-lg opacity-100 hidden md:grid"
+                fetchPriority="high"
                 height={134.88}
                 classNames={{
                   wrapper: "w-full h-full"
