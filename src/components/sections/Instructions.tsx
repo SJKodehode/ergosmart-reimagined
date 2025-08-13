@@ -1,10 +1,10 @@
 import { Card, CardBody, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import instruction1 from '@/assets/instructions-1.jpg'
-import instruction2 from '@/assets/instructions-2.jpg'
-import instruction3 from '@/assets/instructions-3.jpg'
-import instruction4 from '@/assets/instructions-4.jpg'
+import instruction1 from '@/assets/resized/instructions-1.jpg'
+import instruction2 from '@/assets/resized/instructions-2.jpg'
+import instruction3 from '@/assets/resized/instructions-3.jpg'
+import instruction4 from '@/assets/resized/instructions-4.jpg'
 
 
 const steps = [

@@ -1,16 +1,16 @@
 import { Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import productCollection from '@/assets/product-collection.jpg'
-import washcloth1 from "@/assets/washcloth-1.jpg";
-import washcloth2 from "@/assets/washcloth-2.jpg";
-import washcloth3 from "@/assets/washcloth-3.jpg";
-import washcloth4 from "@/assets/washcloth-4.jpg";
-import washcloth5 from "@/assets/washcloth-5.jpg";
-import washcloth6 from "@/assets/washcloth-6.jpg";
-import washcloth7 from "@/assets/washcloth-7.jpg";
-import washcloth8 from "@/assets/washcloth-8.jpg";
-import washcloth9 from "@/assets/washcloth-9.jpg";
-import washcloth10 from "@/assets/washcloth-10.jpg";
+import washcloth1 from "@/assets/resized/washcloth-1.jpg";
+import washcloth2 from "@/assets/resized/washcloth-2.jpg";
+import washcloth3 from "@/assets/resized/washcloth-3.jpg";
+import washcloth4 from "@/assets/resized/washcloth-4.jpg";
+import washcloth5 from "@/assets/resized/washcloth-5.jpg";
+import washcloth6 from "@/assets/resized/washcloth-6.jpg";
+import washcloth7 from "@/assets/resized/washcloth-7.jpg";
+import washcloth8 from "@/assets/resized/washcloth-8.jpg";
+import washcloth9 from "@/assets/resized/washcloth-9.jpg";
+import washcloth10 from "@/assets/resized/washcloth-10.jpg";
 
 export function Products() {
   const imgs = [washcloth1, washcloth2, washcloth3, washcloth4, washcloth5, washcloth6, washcloth7, washcloth8, washcloth9, washcloth10]

@@ -1,8 +1,8 @@
 import { Button, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import heroImage1 from "@/assets/hero-img-1.jpg";
-import heroImage2 from "@/assets/hero-image-2.jpg";
-import heroImage3 from "@/assets/product-collection.jpg";
+import heroImage1 from "@/assets/resized/hero-img-1.jpg";
+import heroImage2 from "@/assets/resized/hero-image-2.jpg";
+import heroImage3 from "@/assets/resized/product-collection.jpg";
 
 export function Hero() {
   const scrollToContact = () => {
@@ -33,6 +33,7 @@ export function Hero() {
                 src={heroImage1}
                 alt="Ergonomisk klut i bruk"
                 className="rounded-3xl shadow-lg opacity-100 hidden md:grid"
+                
                 classNames={{
                   wrapper: "w-full h-full"
                 }}

@@ -1,8 +1,8 @@
 import { Card, CardBody, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
-import instructionsImage1 from '@/assets/instructions-image-1.jpg'
-import instructionsImage2 from '@/assets/instructions-image-2.jpg'
-import instructionsImage3 from '@/assets/instructions-image-3.jpg'
+import instructionsImage1 from '@/assets/resized/instructions-image-1.jpg'
+import instructionsImage2 from '@/assets/resized/instructions-image-2.jpg'
+import instructionsImage3 from '@/assets/resized/instructions-image-3.jpg'
 
 
 
